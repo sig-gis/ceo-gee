@@ -1,13 +1,13 @@
 from distutils.util import strtobool
 import json
 
-from gee.utils import initialize, listAvailableBands, imageToMapId, imageCollectionToMapId, \
+from .utils import initialize, listAvailableBands, imageToMapId, imageCollectionToMapId, \
     filteredImageCompositeToMapId, filteredSentinelComposite, filteredSentinelSARComposite, \
     filteredImageByIndexToMapId, getFeatureCollectionTileUrl, getTimeSeriesByCollectionAndIndex, \
     getTimeSeriesByIndex, getStatistics, getDegradationPlotsByPoint, getDegradationPlotsByPointS1, \
     getDegradationTileUrlByDate, getDegradationTileUrlByDateS1, safeParseJSON, filteredNicfiCompositeToMapId
-from gee.planet import getPlanetMapID
-from gee.inputs import getLandsatToa, getNICFI
+from .planet import getPlanetMapID
+from .inputs import getLandsatToa, getNICFI
 
 
 def safeListGet(l, idx, default=None):

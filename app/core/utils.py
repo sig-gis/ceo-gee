@@ -5,7 +5,7 @@ import math
 import sys
 import json
 from ee.ee_exception import EEException
-from gee.inputs import getLandsat, getS1, getLandsatToa, getNICFI, getSentinel2Toa, calcNDVI, calcEVI, calcEVI2, calcNDMI, calcNDWI
+from .inputs import getLandsat, getS1, getLandsatToa, getNICFI, getSentinel2Toa, calcNDVI, calcEVI, calcEVI2, calcNDMI, calcNDWI
 
 
 ########## Helper functions ##########
